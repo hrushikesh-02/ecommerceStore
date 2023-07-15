@@ -9,12 +9,10 @@ function App() {
   return (
     <>
       <Header />
-      <BrowserRouter basename="/ecommerceStore">
-        <Routes>
-          <Route path="/" element={<Cards />}></Route>
-          <Route path="/cart/:id" element={<CardsDetail />}></Route>
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Cards />}></Route>
+        <Route path="/cart/:id" element={<CardsDetail />}></Route>
+      </Routes>
     </>
   );
 }
